@@ -1,5 +1,6 @@
 # iPhone Calculator in Angular
 
+
 This project is an Angular-based calculator inspired by the iPhone calculator. It supports basic arithmetic operations, square root calculations, and includes a delete button to remove individual digits. It also handles edge cases such as calculations starting with 0.
 
 ## Features
