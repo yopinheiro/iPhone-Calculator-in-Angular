@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <div class="calculator">
+          <div class="display">
+            <input type="text" [(ngModel)]="display" disabled />
+          </div>
+          <div class="buttons">
+            <button *ngFor="let btn of buttons" (click)="onButtonClick(btn)">
+              <ng-container *ngIf="btn.icon; else text">
+                <fa-icon [icon]="btn.icon"></fa-icon>
+              </ng-container>
+              <ng-template #text>{{ btn.label }}</ng-template>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
